@@ -550,7 +550,7 @@ class App {
         )
         .openPopup();
 
-      const url = `http://router.project-osrm.org/route/v1/driving/${workout.startCoords[1]},${workout.startCoords[0]};${workout.coords[1]},${workout.coords[0]}?overview=full&geometries=geojson`;
+      const url = `https://router.project-osrm.org/route/v1/driving/${workout.startCoords[1]},${workout.startCoords[0]};${workout.coords[1]},${workout.coords[0]}?overview=full&geometries=geojson`;
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
