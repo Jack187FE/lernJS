@@ -277,7 +277,7 @@ class App {
 
   _calculateRoute(endCoords) {
     const startCoords = this._startMarker.getLatLng();
-    const url = `http://router.project-osrm.org/route/v1/driving/${startCoords.lng},${startCoords.lat};${endCoords[1]},${endCoords[0]}?overview=full&geometries=geojson`;
+    const url = `https://router.project-osrm.org/route/v1/driving/${startCoords.lng},${startCoords.lat};${endCoords[1]},${endCoords[0]}?overview=full&geometries=geojson`;
 
     fetch(url)
       .then((response) => response.json())
